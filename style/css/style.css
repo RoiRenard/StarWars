@@ -1,0 +1,49 @@
+body {
+    background: #000;
+    color: #ffbe00;
+    font-family: sans-serif;
+    font-size: 5vw;
+    line-height: 1.5;
+    overflow: hidden;
+}
+
+.container {
+    width: 67%;
+    margin: 0 auto;
+    perspective: 150px;
+    perspective-origin: bottom;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transform: scaleY(1.2);
+}
+
+.credits {
+    position: absolute;
+    top: 0;
+    left: 10%;
+    right: 10%;
+    height: 100%;
+    animation: play 30s ease-in-out infinite ;
+}
+
+h1, h2 {
+    font-size: 3rem;
+    text-align: center;
+}
+
+p {
+    text-align: center;
+    padding: 0.5rem 0;
+}
+
+@keyframes play {
+    0% {
+        transform: rotateX(21deg) translate(0, 120rem);
+    }
+    100% {
+        transform: rotateX(21deg) translate(0, -260rem);
+    }
+}
